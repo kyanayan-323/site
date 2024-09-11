@@ -1,0 +1,80 @@
+<style>
+.character-section {
+  background-color: #fff;
+  padding: 0 0 352px;
+  overflow: hidden;
+}
+
+.character-container {
+  display: flex;
+  gap: 20px;
+}
+
+.image-column {
+  width: 32%;
+}
+
+.character-image {
+  aspect-ratio: 0.66;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+.description-column {
+  width: 68%;
+}
+
+.character-description {
+  color: #000;
+  margin-top: 116px;
+  font: 400 48px Inter, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .character-section {
+    padding-bottom: 100px;
+  }
+
+  .character-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .image-column,
+  .description-column {
+    width: 100%;
+  }
+
+  .character-image {
+    max-width: 100%;
+    margin-top: 31px;
+  }
+
+  .character-description {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+  }
+}
+</style>
+
+<section class="character-section">
+  <div class="character-container">
+    <div class="image-column">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/11d22ed3937d044b067502d9ff89022cb33d0386dd845343772b93d166b4ae8f?placeholderIfAbsent=true&apiKey=b03ad5eda2bd467cbcdfc1a3df7a32d4" class="character-image" alt="Yokai Watch character" />
+    </div>
+    <div class="description-column">
+      <p class="character-description">
+        妖怪ウォッチのメインキャラクターの一匹 <br />
+        妖怪になる前は赤い猫で <br />
+        トラックに引かれてしまった <br />
+        いつもトラックに挑んでいる <br />
+        主人公ケータの友達的存在 <br />
+        好物：チョコボー <br />
+        技：ひゃくれつ肉球
+      </p>
+    </div>
+  </div>
+</section>
